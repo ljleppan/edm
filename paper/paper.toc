@@ -1,0 +1,23 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Abstract}{1}{section.1}
+\contentsline {section}{\numberline {2}Introduction}{1}{section.2}
+\contentsline {subsection}{\numberline {2.1}Research question}{2}{subsection.2.1}
+\contentsline {section}{\numberline {3}Constructed response questions in University of Helsinki CS1 and CS2 courses}{3}{section.3}
+\contentsline {section}{\numberline {4}Existing machine scoring systems}{5}{section.4}
+\contentsline {subsection}{\numberline {4.1}Keyword-based grading systems}{6}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}NLP-based grading systems}{6}{subsection.4.2}
+\contentsline {section}{\numberline {5}Possible suitability problems}{6}{section.5}
+\contentsline {subsection}{\numberline {5.1}Domain problems}{6}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Language problems}{7}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Problems caused by morphological differences}{7}{subsubsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2}Problems caused by syntactic differences}{8}{subsubsection.5.2.2}
+\contentsline {subsection}{\numberline {5.3}Set-up cost}{9}{subsection.5.3}
+\contentsline {section}{\numberline {6}Effects of suitability problems on existing scoring methods}{10}{section.6}
+\contentsline {subsection}{\numberline {6.1}Keyword-based grading systems}{10}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}NLP-based grading systems}{11}{subsection.6.2}
+\contentsline {section}{\numberline {7}Summary and conclusions}{12}{section.7}
+\contentsline {section}{References}{12}{section*.2}
+\select@language {english}
+\select@language {english}
+\select@language {english}
+\select@language {english}

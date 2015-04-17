@@ -1,0 +1,130 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{LAD{\etalchar{+}}13}
+  \providebibliographyfont{name}{}%
+  \providebibliographyfont{lastname}{}%
+  \providebibliographyfont{title}{\emph}%
+  \providebibliographyfont{jtitle}{\btxtitlefont}%
+  \providebibliographyfont{etal}{\emph}%
+  \providebibliographyfont{journal}{}%
+  \providebibliographyfont{volume}{}%
+  \providebibliographyfont{ISBN}{\MakeUppercase}%
+  \providebibliographyfont{ISSN}{\MakeUppercase}%
+  \providebibliographyfont{url}{\url}%
+  \providebibliographyfont{numeral}{}%
+  \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+
+\expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+\bibitem [{Ben91}]{bennett91}
+\btxnamefont {\btxlastnamefont {Bennett}, Randy\btxfnamespacelong
+  Elliot}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {On the meanings of
+  constructed response}{On the meanings of constructed response}}.
+\newblock \btxjournalfont {ETS Research Report Series}, 1991(2):i--46, 1991.
+
+\bibitem [{BJ10}]{butcher10}
+\btxnamefont {\btxlastnamefont {Butcher}, Philip\btxfnamespacelong G}
+  \btxandlong {}\ \btxnamefont {\btxlastnamefont {Jordan},
+  Sally\btxfnamespacelong E}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase
+  {A comparison of human and computer marking of short free-text student
+  responses}{A comparison of human and computer marking of short free-text
+  student responses}}.
+\newblock \btxjournalfont {Computers \& Education}, 55(2):489--499, 2010.
+
+\bibitem [{But06}]{butcher06}
+\btxnamefont {\btxlastnamefont {Butcher}, PG}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {{O}pen{M}ark examples}{{O}pen{M}ark examples}}.
+\newblock \url{http://www.open.ac.uk/openmarkexamples/}, 2006.
+\newblock Accessed: 2015-03-19.
+
+\bibitem [{KK85}]{karttunen85}
+\btxnamefont {\btxlastnamefont {Karttunen}, Lauri} \btxandlong {}\ \btxnamefont
+  {\btxlastnamefont {Kay}, Martin}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Parsing in a free word order language}{Parsing in a free
+  word order language}}.
+\newblock \btxjournalfont {Natural language parsing}, \btxpageslong {}\
+  279--306, 1985.
+
+\bibitem [{KLJJ04}]{korenius04}
+\btxnamefont {\btxlastnamefont {Korenius}, Tuomo}, \btxnamefont
+  {\btxlastnamefont {Laurikkala}, Jorma}, \btxnamefont {\btxlastnamefont
+  {J{\"a}rvelin}, Kalervo}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {\btxlastnamefont {Juhola}, Martti}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Stemming and lemmatization in the clustering of {F}innish
+  text documents}{Stemming and lemmatization in the clustering of {F}innish
+  text documents}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Proceedings of the thirteenth ACM
+  international conference on Information and knowledge management},
+  \btxpageslong {}\ 625--633. ACM, 2004.
+
+\bibitem [{LAD{\etalchar{+}}13}]{linden13}
+\btxnamefont {\btxlastnamefont {Lind{\'e}n}, Krister}, \btxnamefont
+  {\btxlastnamefont {Axelson}, Erik}, \btxnamefont {\btxlastnamefont {Drobac},
+  Senka}, \btxnamefont {\btxlastnamefont {Hardwick}, Sam}, \btxnamefont
+  {\btxlastnamefont {Kuokkala}, Juha}, \btxnamefont {\btxlastnamefont {Niemi},
+  Jyrki}, \btxnamefont {\btxlastnamefont {Pirinen}, Tommi\btxfnamespacelong
+  A}\btxandcomma {} \btxandlong {}\ \btxnamefont {\btxlastnamefont
+  {Silfverberg}, Miikka}\btxauthorcolon\ \btxtitlefont {\btxifchangecase
+  {{H}{F}{S}{T}—a system for creating {N}{L}{P} tools}{{H}{F}{S}{T}—a
+  system for creating {N}{L}{P} tools}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Systems and Frameworks for
+  Computational Morphology}, \btxpageslong {}\ 53--71. \btxpublisherfont
+  {Springer}, 2013.
+
+\bibitem [{LAH{\etalchar{+}}11}]{linden11}
+\btxnamefont {\btxlastnamefont {Lind{\'e}n}, Krister}, \btxnamefont
+  {\btxlastnamefont {Axelson}, Erik}, \btxnamefont {\btxlastnamefont
+  {Hardwick}, Sam}, \btxnamefont {\btxlastnamefont {Pirinen},
+  Tommi\btxfnamespacelong A}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {\btxlastnamefont {Silfverberg}, Miikka}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {{H}{F}{S}{T}—framework for compiling and applying
+  morphologies}{{H}{F}{S}{T}—framework for compiling and applying
+  morphologies}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Systems and Frameworks for
+  Computational Morphology}, \btxpageslong {}\ 67--85. \btxpublisherfont
+  {Springer}, 2011.
+
+\bibitem [{LC03}]{leacock03}
+\btxnamefont {\btxlastnamefont {Leacock}, Claudia} \btxandlong {}\ \btxnamefont
+  {\btxlastnamefont {Chodorow}, Martin}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {C-rater: {A}utomated scoring of short-answer
+  questions}{C-rater: {A}utomated scoring of short-answer questions}}.
+\newblock \btxjournalfont {Computers and the Humanities}, 37(4):389--405, 2003.
+
+\bibitem [{Pir11}]{pirinen11}
+\btxnamefont {\btxlastnamefont {Pirinen}, Tommi\btxfnamespacelong
+  A}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Modularisation of finnish
+  finite-state language description—towards wide collaboration in open source
+  development of a morphological analyser}{Modularisation of finnish
+  finite-state language description—towards wide collaboration in open source
+  development of a morphological analyser}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Proceedings of Nodalida},
+  \btxvolumelong {}~\btxvolumefont {18}, \btxpageslong {}\ 299--302. Citeseer,
+  2011.
+
+\bibitem [{She15}]{shermis15}
+\btxnamefont {\btxlastnamefont {Shermis}, Mark\btxfnamespacelong
+  D}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Contrasting
+  state-of-the-art in the machine scoring of short-form constructed
+  responses}{Contrasting state-of-the-art in the machine scoring of short-form
+  constructed responses}}.
+\newblock \btxjournalfont {Educational Assessment}, 20(1):46--65, 2015.
+
+\bibitem [{VL14}]{vihavainen14}
+\btxnamefont {\btxlastnamefont {Vihavainen}, Arto} \btxandlong {}\ \btxnamefont
+  {\btxlastnamefont {Luukkainen}, Matti}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Ohjelmoinnin perus- ja jatkokurssin
+  materiaali}{Ohjelmoinnin perus- ja jatkokurssin materiaali}}.
+\newblock \url{http://www.cs.helsinki.fi/group/java/s14-materiaali/viikko1/},
+  2014.
+
+\bibitem [{VVLP13}]{vihavainen13}
+\btxnamefont {\btxlastnamefont {Vihavainen}, Arto}, \btxnamefont
+  {\btxlastnamefont {Vikberg}, Thomas}, \btxnamefont {\btxlastnamefont
+  {Luukkainen}, Matti}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {\btxlastnamefont {P{\"a}rtel}, Martin}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Scaffolding students' learning using test my
+  code}{Scaffolding students' learning using test my code}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Proceedings of the 18th ACM conference
+  on Innovation and technology in computer science education}, \btxpageslong
+  {}\ 117--122. ACM, 2013.
+
+\end{thebibliography}

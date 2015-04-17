@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: paper.aux
+The style file: babalpha-lf.bst
+Database file #1: references.bib
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--empty language in bennett91
+You've used 12 entries,
+            3208 wiz_defined-function locations,
+            768 strings with 8494 characters,
+and the built_in function-call counts, 6689 in all, are:
+= -- 639
+> -- 255
+< -- 11
++ -- 89
+- -- 88
+* -- 673
+:= -- 935
+add.period$ -- 30
+call.type$ -- 12
+change.case$ -- 81
+chr.to.int$ -- 12
+cite$ -- 13
+duplicate$ -- 341
+empty$ -- 575
+format.name$ -- 143
+if$ -- 1420
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 15
+newline$ -- 66
+num.names$ -- 36
+pop$ -- 116
+preamble$ -- 1
+purify$ -- 93
+quote$ -- 0
+skip$ -- 224
+stack$ -- 0
+substring$ -- 346
+swap$ -- 147
+text.length$ -- 11
+text.prefix$ -- 4
+top$ -- 0
+type$ -- 96
+warning$ -- 1
+while$ -- 58
+width$ -- 15
+write$ -- 142
+(There was 1 warning)
