@@ -74,7 +74,7 @@
 
 \section{Abstract}
 
-The ever-increasing pressure to do more and better with less resources has been a driving factor for the creation and implementation of automated tutoring and grading systems. University of Helsinki Department of Computer Science already employs mutiple such systems: TestMyCode is an assessment service that provides students with programming exercises, marks their answers and provides feedback based on predefined tests. Other similar systems are TitoTrainer and SQL-Trainer. These systems all sharea  common characteristic: they take input, complete certain steps and more-or-less blindly compare the output to known correct values. 
+The ever-increasing pressure to do more and better with less resources has been a driving factor for the creation and implementation of automated tutoring and grading systems. University of Helsinki Department of Computer Science already employs multiple such systems: TestMyCode is an assessment service that provides students with programming exercises, marks their answers and provides feedback based on predefined tests. Other similar systems are TitoTrainer and SQL-Trainer. These systems all share a  common characteristic: they take input, complete certain steps and more-or-less blindly compare the output to known correct values. 
 
 While automating these kinds of exercises already saves valuable time for the teacher and provides the student with more immediate feedback, it's becoming apparent that more sophisticated exercises - and more sophisticated graders - are needed to further improve the situation.
 
@@ -91,7 +91,7 @@ The paper also attempts to determine the suitability of aforementioned automated
 
 Several concerns can be identified concerning the suitability of these systems for use with self-explanation questions. Some of them (1-2) concern the language and field of the environment:
 \begin{enumerate}
-	\item Whether existing systems are usable with Computer Science as a field
+	\item Whether existing systems are usable with Computer Science as a domain
 	\item Whether existing systems are usable with the Finnish language
 \end{enumerate}
 
@@ -105,18 +105,6 @@ Since self-explanation questions are numerous and change often, it is possible t
 	\item Whether the introduction of a new question or question type takes too much resources for the systems to be of use.
 \end{enumerate}
 
-\subsection{Research question}
-
-Based on the concerns presented in the previous chapter, the following research questions are formulated:
-
-\begin{enumerate}
-	\item Can existing systems work with Computer Science related questions?
-	\item Can existing systems work with the Finnish language?
-	\item How much training data do existing systems require on a per question basis?
-	\item How much time does introducing a new question on one of these systems take?
-	\item Based on other research questions, are any of the systems usable with self-explanation questions?
-\end{enumerate}
-
 \section{Constructed response questions in University of Helsinki CS1 and CS2 courses}
 
 While multiple definitions of the term ''constructed response'' exist, the most common is that a constructed response question is any question that requires a free-form answer \cite{bennett91}. This answers can be as short as a single word -- in the case of a ''fill in the blank'' questions -- or as longs as multiple pages. As is perhaps apparent from the openness of the previous definition, the term ''constructed response'' is less defined by itself than as an opposite for the term ''chosen response question'', more commonly known as multiple-choice questions.
@@ -126,7 +114,7 @@ Instead of observing such a large spread of answer types, this paper focuses on 
 
 University of Helsinki Department of Computer Science has recently embedded short-form free-text constructed response questions in its CS1 and CS2 course material. An example of such a question can be seen in figure \ref{fig:selitystehtava}.
 
-\begin{figure}[h]
+\begin{figure}[h!]
 	\begin{mdframed}
 		Alla on kaverisi hahmottelemaa kurssisuoritus-luokan koodia.
 
@@ -160,22 +148,43 @@ public class Kurssisuoritus {
 
 Most of the exercises follow a pattern similar to the one presented in figure \ref{fig:selitystehtava}: some source code acting as a background for the question followed by the actual question prompt. In most cases the prompt is essentially two question in one: first a questions that relates to the source code provided followed by a second question that is more technical or theoretical in nature.
 
-These two-in-one prompts might appear to be difficult to automatically grade, but existing systems are not foreign to complicated prompts. For example the c-rater \cite{leacock03} has been used with prompts as complex as "Compare and contrast what Mama and Walter in \emph{A Raisin in the Sun} believe to be the most important thing in life or whaty they ''dream'' of. Support your choice for each character with dialogue from the exceprt of the play." \cite{leacock03}. The author therefore feels that its reasonable to expect these systems to be able to handle even the two-in-one prompts found in the CS1 and CS2 material.
-
-Furthermore, even if these two-in-one prompts would turn out to be a problem, the students' answers themselves should answer both and therefore the prompt can be split into two different prompts and the answer graded as an answer to both individually. When used like this, the student's answer might appear to veer ''off course'' when the student is answering the other part of the prompt. But since the question type is not an essay and the answer is not graded on style and grammar, there is no need for this to affect grading.
+These two-in-one prompts might appear to be difficult to automatically grade, but existing systems are not foreign to complicated prompts. For example the c-rater \cite{leacock03} has been used with prompts as complex as "Compare and contrast what Mama and Walter in \emph{A Raisin in the Sun} believe to be the most important thing in life or what they ''dream'' of. Support your choice for each character with dialogue from the excerpt of the play." \cite{leacock03}. The author therefore feels that its reasonable to expect these systems to be able to handle even the two-in-one prompts found in the CS1 and CS2 material.
 
 
 \section{Existing machine scoring systems}
 
-Existing machine scoring system for short free-text constructed response questions can be classified in two major categories: those that are ''based on algorithmic manipulation of keywords'' \cite{butcher10} and those that employ computational linguistics . This paper will use the term ''NLP-based'' of the first category and the term ''keyword-based'' of the second. Both of these categories can be divided into further subcategories.
+Existing machine scoring system for short free-text constructed response questions can be classified in two major categories: those that are ''based on algorithmic manipulation of keywords'' \cite{butcher10} and those that employ computational linguistics . This paper will use the term ''keyword-based'' of the first category and the term ''NLP-based'' of the second. Both of these categories can be divided into further subcategories, especially by whether they derive their rules using machine learning or not.
 
 \subsection{Keyword-based grading systems}
 
 Keyword-based systems are relatively simple in that they do not employ sophisticated natural language processing (NLP) methods. Rather, they depend on manipulating strings and tokens of the text and matching them to certain keywords and regular expressions to determine whether the answer is correct. One such system is OpenMark \cite{butcher06}, utilized by the UK Open University.
 
+\cite{butcher10} compared the OpenMark systems with a regular expression based grader. Using seven different exercises with $n_{min} = 129$ to $n_{max} = 317$ responses, the OpenMark agreement with the expert assigned grades initially varied between $87.9\%$ and $99.5\%$, while the regular expression based grader initially  achieved accuracies between $88.6\%$ and $98.9\%$. A further test achieved accuracies ranging from $99.3\%$ to $100.0\%$ for OpenMark and $95.5\%$ to $99.7\%$ for regular expressions. This later test, however, used a common set of known answers for both training and testing which raises questions about overfitting the data.
+
 \subsection{NLP-based grading systems}
 
-Natural language processing based grading systems
+NLP-based grading systems employ methods of natural language processing to assign grades to students' answers. 
+
+One such systems is AutoMark (described in \cite{mitchell02}), which utilizes ''syntactic-semantic templates'' to match a student's answer to a known right or wrong answer. The templates consist of sets of roots or lemmas that are connected. An example template could consists of the sets 
+
+$$s \in \{\{Earth_n, world_n\}, $$
+$$\{rotate_v, revolve_v, orbit_v, travel_v, move_v\}, $$
+$$\{around, round\},$$
+$$ \{Sun_n\}\}$$
+
+\noindent where each set $s_i$ is preceded by set $s_{i-1}$ and followed by set $s_{i+1}$. For the above template, one matching sentence would be ''The Earth rotates around the Sun''.
+
+A 2003 study (\cite{mitchell03}) employed the AutoMark system to grade answers of medical students. For the study, the AutoMark system was manually ''trained'' using $n_{marked} = 50$ hand marked exercises. I a  pilot test, the systems achieved an accuracy of around $99\%$ when $n_{items} = 25$ exercises were answered by $n_{students} = 30$ students. In a further test with $n_{items} = 270$ test items and around $n_{students} = 460$ students, some $1.6\%$ of students had their marks later changed by a moderation group due to errors made by AutoMark. This number only includes students who actively asked for moderation so the actual error percentage is likely somewhat higher. The \cite{butcher10} study also assessed what is essentially the AutoMark system\footnote{The system assessed in the paper is called \emph{Intelligent Assessment Technologies FreeText Author} and is a more developed and commercialized version of the AutoMark system.}, reporting accuracies varying between $89.4\%$ and $99.5\%$.
+
+Another systems that uses a similar template approach is presented in \cite{sukkarieh03}. It reportedly achieved accuracies around $88\%$.
+
+Some NLP-based grades use Latent Semantic Analysis (LSA) (see f.ex. \cite{landauer98})to determine whether an answer is correct or not. LSA is a statistical method that is based on the idea that the ''aggregate of all the word contexts in which a given word does and does not appear provides a set of mutual constraints that largely determines the similarity of meaning of words and sets of words to each other'' (\cite{landauer98}). 
+
+In practice, LSA is a refined bag-of-words method and suffers from all the problems of other bag-of-words methods. For example, previous studies have found that an answer which has a bag of words equal to the the bag of words of a correct answer has only a moderately high correlation with the answer being the correct answer ($r = 0.65$ in \cite{shermis15}). The problem with the bag-of-words approach is clearly demonstrated by considering the sentences ''\emph{Brutus killed Caesar}'' and ''\emph{Caesar killed Brutus}'', both of which result in the same bag of words $\{killed, Caesar, Brutus\}$. Perhaps due to these issues, LSA is uncommon in short-answer context and is mostly used in the context of essay grading.
+
+A third kind of NLP-based systems in represented by \emph{c-rater} (See f.ex. \cite{sukkarieh09, leacock03, shermis15}). The c-rater system uses an approach that is somewhat similar to that used by AutoMark in that it tries to match the student's answer to a template of a correct answer. The difference is that instead of a list-of-sets type of template like the AutoMark systems, the c-rater instead has only a one ''canonical'' answer (or multiple canonical answers if the question has multiple correct answers) and the student's answer is processed to a similar canonical form, after which the processed student's answer is compared to the correct answer. This processing includes solving for syntactic variances, pronoun references, morphological variation and the use of synonyms (\cite{leacock03}).
+
+C-rater has achieved accuracies of around $84\%$ in large scale tests with $n > 100 000$ and $n = 16625$ (\cite{leacock03}). 
 
 \section{Possible suitability problems}
 \label{sec:problems}
@@ -192,15 +201,14 @@ Furthermore, Computer Science documents often contain English language terms tha
 \subsection{Language problems}
 \label{sec:eng-vs-fin}
 
-The stark systematic differences between the English and the Finnish languages present further problems for adapting these existing systems for use in University of Helsinki. The differences that are relevant from this paper's point of view are primarily syntactic and morphological. 
+The stark systematic differences between the English and the Finnish languages present further problems for adapting these existing systems for use in University of Helsinki. The differences that are relevant from this paper's point of view are primarily syntactic\footnote{Syntax is "the study of the principles and processes by which sentences are constructed" (\cite{chomsky02})} and morphological\footnote{Morphology is the study of '''forms of words' in different uses and construction'' (\cite{matthews91})}. 
 
-\todo{Määritelmät syntaksi ja morfologia}
 
 \subsubsection{Problems caused by morphological differences}
 
-Finnish as a language is ''very inflectional and compound rich'' and its ''inflectional and derivational morphology is considerably more complex than that of [..] English'' \cite{korenius04}. A good example of this high difference in the amount of inflection and derivation can be seen in Figure \ref{fig:eng-vs-fin-inflection}.
+Finnish as a language is ''very inflectional and compound rich'' and its ''inflectional and derivational morphology is considerably more complex than that of [..] English'' (\cite{korenius04}). A good example of this high difference in the amount of inflection and derivation can be seen in Figure \ref{fig:eng-vs-fin-inflection}.
 
-\begin{figure}[h]
+\begin{figure}[h!]
 
 	\centering
 
@@ -250,9 +258,9 @@ The possible suitability problems mentioned in section \ref{sec:problems} have a
 
 \subsection{Keyword-based grading systems}
 
-Key-word based grading systems suffer mainly from the language problems described in section \ref{sec:eng-vs-fin}. The relatively free syntax of the Finnish language complicates or even prevents any regular expression based analysis beyond unigrams\footnote{Unigrams are single words or items from a text. They are a special case of n-grams, or sequences of $n$ items from a text or document.}, as the word order can be essentially anything.
+Key-word based grading systems suffer mainly from the language problems described in section \ref{sec:eng-vs-fin}. The relatively free syntax of the Finnish language complicates or even prevents any regular expression based analysis beyond unigrams\footnote{Unigrams are single words or items from a text. They are a special case of n-grams, or sequences of $n$ items from a text or document.}, as the word order can be essentially anything. This same freedom of word order also means that any template based matching must implement templates for all possible word orders, increasing the costs of building an exercise many fold.
 
-This difficulty of analysis beyond the unigram level essentially forces the analysis to use a bag of words approach. Previous studies have found that an answer which has a bag of words equal to the the bag of words of a correct answer has only a moderately high correlation with the answer being the correct answer ($r = 0.65$ in \cite{shermis15}). While this doesn't outright prove that using a bag of words approach is completely infeasible, it speaks against using such an approach.
+This difficulty of analysis beyond the unigram (bag-of-words) level essentially forces the analysis to use a bag of words approach, which -- as discussed previously -- is a sub-optimal strategy.
 
 On the other hand, the domain problems presented in \ref{sec:domain-problems} are not necessarily a big issue beyond requiring more synonyms to be entered for each term.
 
@@ -262,17 +270,25 @@ The resulting accuracy would also be smaller than that achieved on English langu
 
 \subsection{NLP-based grading systems}
 
-The translation costs ($C_t$) of NLP based systems are likely higher than those if keyword-based systems, since the costs include replacing the NLP systems of existing solutions with solutions that function with the Finnish language. While such solutions exist\footnote{See f.ex. \cite{linden11, pirinen11, linden13}}, actually modifying the existing systems to use them is probably either costly or -- in the case of closed source software -- impossible. This means that the total implementation is either impossible or has a large $C_t$. This is further complicated by the domain problems as mentioned in section \ref{sec:domain-problems}, since it's unlikely that any existing systems can handle the Anglicisms and multilingual sentences likely to occur in the answers.
-
-Some NLP-based systems also require training data in the form of pre-graded answers. This need for training increases $C_e$, as 
+The translation costs ($C_t$) of NLP based systems are likely higher than those of keyword-based systems, since the costs include replacing the NLP systems of existing solutions with solutions that function with the Finnish language. While such solutions exist\footnote{See f.ex. \cite{linden11, pirinen11, linden13}}, actually modifying the existing systems to use them is probably either costly or -- in the case of closed source software -- impossible. This means that the implementation is either impossible or has a large $C_t$. This is further complicated by the domain problems as mentioned in section \ref{sec:domain-problems}, since it's unlikely that any existing systems can handle the Anglicisms and multilingual sentences likely to occur in the answers.
 
 On the other hand, if it is possible to implement an NLP-based systems, its $C_e$ is likely lower than that of keyword-based system. This means that if the usage of the system would be sufficiently large, the high $C_t$ would be recouped by the lower $C_e$ over the lifespan of the system.
 
 The domain problems effect on the system accuracy relative to that of similar English language systems is hard to estimate. It is however reasonable to expect the accuracy to suffer to some decree due to the domain problems. How the decrease in accuracy compares to that likely suffered by the keyword-based systems can not be estimated without tests. The author's intuition is that in the end, the NLP based methods would have a higher accuracy than the keyword based systems.
 
-\section{Summary and conclusions}
+\section{Summary}
 
-Existing free-text short-answer grading systems can be classified as Natural language processing (NLP) based systems and keyword-based systems. Both of these classes have different 
+Existing free-text short-answer grading systems can be classified as Natural language processing (NLP) based systems and keyword-based systems. Both of these classes have different strong and weak points, both in general and in relation to the Finnish language.
+
+In general, NLP based methods seem to be more accurate than those that are purely keyword-based. On the other hand, they also are more complex and would require more modification before they can be used in conjuncture with the Finnish language. Keyword-based methods seem to require less modification, but would require large per-exercise set-up efforts to reach any reasonable accuracies. 
+
+As both NLP and keyword-based methods have scored around the $80-90\%$ mark in previous studies, it is also questionable whether these systems are mature enough for teachers to wholly depend on them for grading purposes. Based on the domain and language problems detailed in section \ref{sec:problems}, it seems unlikely that the systems could achieve as great accuracies than those that they achieve with the English language.
+
+It's therefore the view of the author that the systems examined here are not yet mature enough for usage as graders for purposes of determining students' course grades as they are now. It seems more responsible to first test these systems out with a pilot program in a more forgiving environment, perhaps by using the alongside human experts to improve the technology and seek solutions that work especially with the Finnish language. 
+
+Such a pilot program should likely start by evaluating keyword-based methods, since they lack the high translation costs of NLP-based methods. While it is unlikely that these keyword-based methods would turn out to be sufficiently accurate, they would likely still provide valuable insights for translation of the NLP methods.
+
+
 
 % --- Bibliography ---
 

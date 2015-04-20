@@ -1,5 +1,5 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{LAD{\etalchar{+}}13}
+\begin{thebibliography}{MAWB03}
   \providebibliographyfont{name}{}%
   \providebibliographyfont{lastname}{}%
   \providebibliographyfont{title}{\emph}%
@@ -34,6 +34,11 @@
   {\btxifchangecase {{O}pen{M}ark examples}{{O}pen{M}ark examples}}.
 \newblock \url{http://www.open.ac.uk/openmarkexamples/}, 2006.
 \newblock Accessed: 2015-03-19.
+
+\bibitem [{Cho02}]{chomsky02}
+\btxnamefont {\btxlastnamefont {Chomsky}, Noam}\btxauthorcolon\ \btxtitlefont
+  {Syntactic structures}.
+\newblock \btxpublisherfont {Walter de Gruyter}, 2002.
 
 \bibitem [{KK85}]{karttunen85}
 \btxnamefont {\btxlastnamefont {Karttunen}, Lauri} \btxandlong {}\ \btxnamefont
@@ -89,6 +94,39 @@
   questions}{C-rater: {A}utomated scoring of short-answer questions}}.
 \newblock \btxjournalfont {Computers and the Humanities}, 37(4):389--405, 2003.
 
+\bibitem [{LFL98}]{landauer98}
+\btxnamefont {\btxlastnamefont {Landauer}, Thomas\btxfnamespacelong K},
+  \btxnamefont {\btxlastnamefont {Foltz}, Peter\btxfnamespacelong
+  W}\btxandcomma {} \btxandlong {}\ \btxnamefont {\btxlastnamefont {Laham},
+  Darrell}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {An introduction to
+  latent semantic analysis}{An introduction to latent semantic analysis}}.
+\newblock \btxjournalfont {Discourse processes}, 25(2-3):259--284, 1998.
+
+\bibitem [{Mat91}]{matthews91}
+\btxnamefont {\btxlastnamefont {Matthews}, Peter\btxfnamespacelong
+  H}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Morphology (cambridge
+  textbooks in linguistics)}{Morphology (Cambridge Textbooks in Linguistics)}},
+  1991.
+
+\bibitem [{MAWB03}]{mitchell03}
+\btxnamefont {\btxlastnamefont {Mitchell}, Tom}, \btxnamefont {\btxlastnamefont
+  {Aldridge}, Nicola}, \btxnamefont {\btxlastnamefont {Williamson},
+  Walter}\btxandcomma {} \btxandlong {}\ \btxnamefont {\btxlastnamefont
+  {Broomhead}, Peter}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Computer
+  based testing of medical knowledge}{Computer based testing of medical
+  knowledge}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Proceedings of the 7th computer
+  assisted assessment conference}, \btxpageslong {}\ 249--267, 2003.
+
+\bibitem [{MRBA02}]{mitchell02}
+\btxnamefont {\btxlastnamefont {Mitchell}, Tom}, \btxnamefont {\btxlastnamefont
+  {Russell}, Terry}, \btxnamefont {\btxlastnamefont {Broomhead},
+  Peter}\btxandcomma {} \btxandlong {}\ \btxnamefont {\btxlastnamefont
+  {Aldridge}, Nicola}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Towards
+  robust computerised marking of free-text responses}{Towards robust
+  computerised marking of free-text responses}}.
+\newblock 2002.
+
 \bibitem [{Pir11}]{pirinen11}
 \btxnamefont {\btxlastnamefont {Pirinen}, Tommi\btxfnamespacelong
   A}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Modularisation of finnish
@@ -100,6 +138,14 @@
   \btxvolumelong {}~\btxvolumefont {18}, \btxpageslong {}\ 299--302. Citeseer,
   2011.
 
+\bibitem [{SB09}]{sukkarieh09}
+\btxnamefont {\btxlastnamefont {Sukkarieh}, Jana\btxfnamespacelong Zuheir}
+  \btxandlong {}\ \btxnamefont {\btxlastnamefont {Blackmore},
+  John}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {c-rater: {A}utomatic
+  {C}ontent {S}coring for {S}hort {C}onstructed {R}esponses.}{c-rater:
+  {A}utomatic {C}ontent {S}coring for {S}hort {C}onstructed {R}esponses.}}
+\newblock \Btxinlong {}\ \btxtitlefont {FLAIRS Conference}, 2009.
+
 \bibitem [{She15}]{shermis15}
 \btxnamefont {\btxlastnamefont {Shermis}, Mark\btxfnamespacelong
   D}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Contrasting
@@ -107,6 +153,18 @@
   responses}{Contrasting state-of-the-art in the machine scoring of short-form
   constructed responses}}.
 \newblock \btxjournalfont {Educational Assessment}, 20(1):46--65, 2015.
+
+\bibitem [{SPR03}]{sukkarieh03}
+\btxnamefont {\btxlastnamefont {Sukkarieh}, Jana\btxfnamespacelong Z},
+  \btxnamefont {\btxlastnamefont {Pulman}, Stephen\btxfnamespacelong
+  G}\btxandcomma {} \btxandlong {}\ \btxnamefont {\btxlastnamefont {Raikes},
+  Nicholas}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Auto-marking:
+  using computational linguistics to score short, free text
+  responses}{Auto-marking: using computational linguistics to score short, free
+  text responses}}.
+\newblock \Btxinlong {}\ \btxtitlefont {th annual conference of the
+  International Association for Educational Assessment (IAEA), Manchester, UK},
+  2003.
 
 \bibitem [{VL14}]{vihavainen14}
 \btxnamefont {\btxlastnamefont {Vihavainen}, Arto} \btxandlong {}\ \btxnamefont
